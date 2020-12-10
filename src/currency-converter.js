@@ -110,6 +110,8 @@ if(fromCur === toCur){
 
 // Now we will compute the rate, apply it to the amount, and capture the result.
 
+let rate = num*conv
+console.log(rate.toFixed(2))
 
 // --------------------------------------------------
 // Step 6: Display results
