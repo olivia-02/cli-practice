@@ -27,6 +27,10 @@
 // If any of the required information is missing, display a meaningful message
 // and exit the program.
 
+if(num === undefined || fromCur === undefined || toCur === undefined) {
+	console.log('Empty input, please provide amount, and currencies');
+	process.exit();
+}
 
 // --------------------------------------------------
 // Step 3: Define currency conversion rates
