@@ -110,8 +110,7 @@ if(fromCur === toCur){
 
 // Now we will compute the rate, apply it to the amount, and capture the result.
 
-let rate = num*conv
-console.log(rate.toFixed(2))
+let rate = num/conv
 
 // --------------------------------------------------
 // Step 6: Display results
@@ -120,3 +119,5 @@ console.log(rate.toFixed(2))
 
 // This message should also include the original amount and currency information
 // supplied by the user.
+
+console.log(`Conversion: ` + num + ` ` + fromCur + ` to ` + toCur + ` is ` + rate.toFixed(2) + ` ` + toCur)
