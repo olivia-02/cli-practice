@@ -44,6 +44,38 @@ if(num === undefined || fromCur === undefined || toCur === undefined) {
 // The conversion rates do not have to be accurate, athough this resource contains
 // up-to-date rate information: https://www.xe.com/
 
+const rates = {
+	CAD: {
+		USD: 1.27424,
+		EUR: 1.54572,
+		GBP: 1.6935,
+		INR: 0.0173
+	},
+	USD: {
+		CAD: 0.78478,
+		EUR: 1.21305,
+		GBP: 1.32903,
+		INR: 0.01357
+	},
+	EUR: {
+		USD: 0.82464,
+		GBP: 1.09599,
+		CAD: 0.64696,
+		INR: 0.01119
+	},
+	GBP: {
+		USD: 0.82434,
+		EUR: 0.91241,
+		CAD: 0.59008,
+		INR: 0.01021
+	},
+	INR: {
+		USD: 73.6682,
+		EUR: 89.3725,
+		GBP: 97.93,
+		CAD: 57.7929
+	}
+}
 
 
 // --------------------------------------------------
