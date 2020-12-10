@@ -11,11 +11,13 @@
 // --------------------------------------------------
 // Step 1: Capture user input
 // --------------------------------------------------
-// In this step we will capture the command line  information supplied by the user.
+// In this step we will capture the command line information supplied by the user.
 
 // We will store each piece of information in a dedicated variable for later use.
-
-
+	var num = parseFloat(process.argv[2]),
+		fromCur = process.argv[3],
+		toCur = process.argv[4],
+		conv = 0;
 
 // --------------------------------------------------
 // Step 2: Validate user input
@@ -24,7 +26,6 @@
 
 // If any of the required information is missing, display a meaningful message
 // and exit the program.
-
 
 
 // --------------------------------------------------
@@ -59,7 +60,6 @@
 // information, and that a rate exists for each of the currencies.
 
 // Now we will compute the rate, apply it to the amount, and capture the result.
-
 
 
 // --------------------------------------------------
