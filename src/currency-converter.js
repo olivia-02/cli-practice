@@ -87,6 +87,19 @@ const rates = {
 // If the user supplies an invalid initial or target currency, display a meaningful
 // warning message and exit the program.
 
+if(fromCur !== `CAD` && fromCur !== `USD` && fromCur !== `GBP` && fromCur !== `EUR` && fromCur !== `INR`){
+	console.log('Please enter valid currency (CAD, USD, EUR, GBP, INR), Recieved: ' + fromCur);
+	process.exit();
+} else if (toCur !== `CAD` && toCur !== `USD` && toCur !== `GBP` && toCur !== `EUR` && toCur !== `INR`){
+	console.log('Please enter valid currency (CAD, USD, EUR, GBP, INR), Recieved: ' + toCur);
+	process.exit();
+} else if (isNaN(num)){
+	console.log('Please enter a valid value. Recieved: ' + num);
+	process.exit();
+}
+if(fromCur === toCur){
+	 conv = 1;
+} else {conv = rates[fromCur][toCur]}
 
 
 // --------------------------------------------------
